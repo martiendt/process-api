@@ -10,6 +10,5 @@ module.exports = {
   },
   globalSetup: "<rootDir>/src/test/setup.ts",
   globalTeardown: "<rootDir>/src/test/teardown.ts",
-  modulePathIgnorePatterns: ["src/modules/expedition/controller"],
   testTimeout: 100000,
 };

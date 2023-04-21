@@ -4,6 +4,7 @@ import coaCategoriesRouter from "./modules/coa-category/router.js";
 import coaGroupsRouter from "./modules/coa-group/router.js";
 import coaTypesRouter from "./modules/coa-type/router.js";
 import exampleRouter from "./modules/example/router.js";
+import expeditionsRouter from "./modules/expedition/router.js";
 import processesRouter from "./modules/processes/router.js";
 
 export default function () {
@@ -19,6 +20,7 @@ export default function () {
   app.use("/v1/coa-categories", coaCategoriesRouter);
   app.use("/v1/coa-groups", coaGroupsRouter);
   app.use("/v1/coa-types", coaTypesRouter);
+  app.use("/v1/expeditions", expeditionsRouter);
 
   return app;
 }
